@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .class {
+        attribute: ;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .class {
+        attribute: ;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .class {
+        attribute: ;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .class {
+        attribute: ;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .class {
+        attribute: ;
+    }
+}
