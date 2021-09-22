@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
   
 .clearfix::after {
@@ -20,13 +21,13 @@
 /*------------ Inizio upper container classes -------------*/
 
 .upper_container {
-    border: 1px dotted red;
+    /* border: 1px dotted red; usata per visualizzare se funziona */
     flex-grow: 1;
     display: flex;
 }
 
 .upper_container_box {
-    border: 1px solid cornflowerblue;
+    /* border: 1px solid cornflowerblue; usata per visualizzare se funziona */
 }
 
 /* Inizio side bar classes */
@@ -36,23 +37,24 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .side_bar_menu_container {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; usata per visualizzare se funziona */
     flex-shrink: 0;
 
     /* height: 10px; usata per visualizzare se funziona */
 }
 
 .side_bar_menu_logo {
-    border: 1px solid pink;
+    /* border: 1px solid pink; usata per visualizzare se funziona */
 
     /* height: 50px; usata per visualizzare se funziona */
 }
 
 .side_bar_menu {
-    border: 1px solid pink;
+    /* border: 1px solid pink; usata per visualizzare se funziona */
 
     /* height: 50px; usata per visualizzare se funziona */
 }
@@ -62,7 +64,7 @@
 }
 
 .side_bar_menu_list_item {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; usata per visualizzare se funziona */
 
    /* height: 10px; usata per visualizzare se funziona */
 }
@@ -80,12 +82,32 @@
 }
 
 .side_bar_playlists_container {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; usata per visualizzare se funziona */
     flex-grow: 1;
 }
 
+.side_bar_playlists_creation {
+
+}
+
+.side_bar_playlists {
+
+}
+
+.side_bar_playlists_list {
+    list-style: none;
+}
+
+.side_bar_playlist_list_item {
+
+}
+
+.side_bar_playlists_list_item_title {
+    color: #878787;
+}
+
 .side_bar_user_options_container {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; usata per visualizzare se funziona */
     flex-shrink: 0;
 
     /* height: 10px; usata per visualizzare se funziona */
@@ -97,6 +119,32 @@
 
 .all_music_container {
     flex-grow: 1;
+    background-color: #141922;
+}
+
+.all_music_upgrade_container {
+    background-color: #080b12;
+    padding-top: 28px;
+    padding-bottom: 36px;
+    padding-right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.all_music_upgrade_button {
+    padding: 8px 32px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.all_music_page_links_container {
+
+}
+
+.all_music_recently_played_container {
+
 }
 
 /* Fine all music classes */
@@ -104,14 +152,15 @@
 
 /* Inizio bottom play bar classes */
 
-.bottom_play_bar {
-    border: 1px dotted red;
+.bottom_play_bar_container {
+    /* border: 1px dotted red; usata per visualizzare se funziona */
     flex-shrink: 0;
     display: flex;
+    background-color: #282828;
 }
 
 .bottom_play_bar_box {
-    border: 1px solid cornflowerblue;
+    /* border: 1px solid cornflowerblue; usato per visualizzare se funziona */
     height: 80px;
     width: 100%;
 }
