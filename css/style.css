@@ -5,14 +5,118 @@
 }
   
 .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
   
+.total_container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
 
+/*------------ Inizio upper container classes -------------*/
 
+.upper_container {
+    border: 1px dotted red;
+    flex-grow: 1;
+    display: flex;
+}
 
+.upper_container_box {
+    border: 1px solid cornflowerblue;
+}
+
+/* Inizio side bar classes */
+
+.side_bar_container {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.side_bar_menu_container {
+    border: 1px solid greenyellow;
+    flex-shrink: 0;
+
+    /* height: 10px; usata per visualizzare se funziona */
+}
+
+.side_bar_menu_logo {
+    border: 1px solid pink;
+
+    /* height: 50px; usata per visualizzare se funziona */
+}
+
+.side_bar_menu {
+    border: 1px solid pink;
+
+    /* height: 50px; usata per visualizzare se funziona */
+}
+
+.side_bar_menu_list {
+    list-style: none;
+}
+
+.side_bar_menu_list_item {
+    border: 1px solid yellow;
+
+   /* height: 10px; usata per visualizzare se funziona */
+}
+
+.side_bar_menu_list_item_link {
+
+}
+
+.side_bar_menu_list_item_link_icon {
+
+}
+
+.side_bar_menu_list_item_link_title {
+
+}
+
+.side_bar_playlists_container {
+    border: 1px solid greenyellow;
+    flex-grow: 1;
+}
+
+.side_bar_user_options_container {
+    border: 1px solid greenyellow;
+    flex-shrink: 0;
+
+    /* height: 10px; usata per visualizzare se funziona */
+}
+
+/* Fine side bar classes */
+
+/* Inizio all music classes */
+
+.all_music_container {
+    flex-grow: 1;
+}
+
+/* Fine all music classes */
+/*----------- Fine upper container classes -------------*/
+
+/* Inizio bottom play bar classes */
+
+.bottom_play_bar {
+    border: 1px dotted red;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.bottom_play_bar_box {
+    border: 1px solid cornflowerblue;
+    height: 80px;
+    width: 100%;
+}
+
+/* Fine bottom play bar classes */
 
 
 
@@ -34,7 +138,7 @@
 
 /* Media Queries */
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+/* @media screen and (min-width: 576px) and (max-width: 767px) {
     .class {
         attribute: ;
     }
@@ -63,3 +167,4 @@
         attribute: ;
     }
 }
+ */
