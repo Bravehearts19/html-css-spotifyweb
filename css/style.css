@@ -12,8 +12,6 @@
 }
   
 .total_container {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     width: 100%;
 }
@@ -22,7 +20,7 @@
 
 .upper_container {
     /* border: 1px dotted red; usata per visualizzare se funziona */
-    flex-grow: 1;
+    height: calc(100vh - 80px);
     display: flex;
 }
 
@@ -38,6 +36,7 @@
     display: flex;
     flex-direction: column;
     background-color: black;
+    overflow: hidden;
 }
 
 .side_bar_menu_container {
@@ -144,7 +143,6 @@
     padding-left: 8px;
     padding-top: 16px;
     padding-bottom: 6px;
-    overflow: auto;
 }
 
 .side_bar_playlists_creation {
@@ -185,6 +183,8 @@
 .side_bar_playlists_list {
     list-style: none;
     padding: 7px 0 5px;
+    overflow-y: auto;
+    max-height: 200px;
 }
 
 .side_bar_playlist_list_item {
@@ -313,6 +313,11 @@
     left: 35%;
 }
 
+.all_music_albums_container {
+    height: 100%;
+    /* overflow-y: auto; */
+}
+
 .all_music_recently_played_container {
     padding: 24px 12px 10px;
 }
@@ -327,12 +332,11 @@
     width: 100%;
     padding: 20px 0;
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 20px;
 }
 
 .exposition_card {
-    width: 150px;
+    width: calc(100% / 6 - 20px);
     min-width: 100px;
     flex-shrink: 1;
 }
@@ -360,6 +364,43 @@
     font-size: 12px;
     text-align: center;
 }
+
+.all_music_created_for_you_container {
+
+}
+
+.all_music_created_for_you_main_title {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.all_music_created_for_you_subtitle {
+    color: #878787;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.all_music_artists_container {
+
+}
+
+.all_music_artists_main_title {
+
+}
+
+.all_music_artist_subtitle {
+
+}
+
+.artists_card_image_container {
+    border-radius: 50%;
+}
+
+.artists_card_image {
+    border-radius: 50%;
+}
+
 
 /* Fine all music classes */
 /*----------- Fine upper container classes -------------*/
