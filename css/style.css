@@ -159,7 +159,8 @@
     background-color: #282828;
     height: 80px;
     width: 100%;
-    padding: 20px 14px;
+    padding: 4px 14px;
+    justify-content: space-between;
 }
 
 .bottom_play_bar_box {
@@ -168,7 +169,6 @@
 }
 
 .bottom_play_bar_song_informations {
-    min-width: 17.5%;
     display: flex;
     height: 100%;
     align-items: center;
@@ -179,12 +179,13 @@
 .bottom_play_bar_song_informations_cover {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     height: 100%;
 }
 
 .bottom_play_bar_song_informations_cover_img_container {
     height: 100%;
+    padding: 6px;
 }
 
 .bottom_play_bar_song_informations_cover_img {
@@ -217,10 +218,12 @@
 
 .bottom_play_bar_song_options {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .bottom_play_bar_song_options_player {
-
+    padding-top: 8px;
 }
 
 .bottom_play_bar_song_options_player_list {
@@ -238,7 +241,7 @@
 .bottom_play_bar_song_options_player_list_item_button {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 8px;
 }
 
 .bottom_play_bar_song_options_player_list_item_button_icon {
@@ -248,23 +251,150 @@
 .bottom_play_bar_song_options_player_list_item_main_button  {
     text-decoration: none;
     color: white;
-    padding: 6px 20px;
+    padding: 6px 14px;
 }
 
 .bottom_play_bar_song_options_player_list_item_main_button_icon {
     font-size: 30px;
 }
 
-.bottom_play_bar_song_options_time {
+/* Inizio Song options time */
 
+.bottom_play_bar_song_options_time {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bottom_play_bar_song_options_time_list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.bottom_play_bar_song_options_time_list_item {
+
+}
+
+.bottom_play_bar_song_options_time_list_item_now {
+    flex-shrink: 0;
+}
+
+.bottom_play_bar_song_options_time_list_item_now_time {
+    color: white;
+}
+
+.bottom_play_bar_song_options_time_list_item_progress_bar {
+    flex-grow: 1;
+    max-width: 440px;
+    padding: 8px 0;
+}
+
+.bottom_play_bar_song_options_time_list_item_progress_bar_growth {
+    height: 4px;
+    width: 100%;
+    background-color: #5A5A5A;
+    border-radius: 6px;
+    position: relative;
+}
+
+.bottom_play_bar_song_options_time_list_item_progress_bar_growth_now {
+    width: 9.09%;
+    height: 100%;
+    background-color: #C1C1C1;
+}
+
+.bottom_play_bar_song_options_time_list_item_progress_bar:hover .bottom_play_bar_song_options_time_list_item_progress_bar_growth_now{
+    background-color: #ADFF2F;
+}
+
+.bottom_play_bar_song_options_time_list_item_progress_bar_growth_circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 9.09%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.bottom_play_bar_song_options_time_list_item_progress_bar:hover .bottom_play_bar_song_options_time_list_item_progress_bar_growth_circle {
+    display: block;
+}
+
+.bottom_play_bar_song_options_time_list_item_end {
+    flex-shrink: 0;
+}
+
+.bottom_play_bar_song_options_time_list_item_end_time {
+    color: white;
 }
 
 .bottom_play_bar_spotify_options {
-    min-width: 22.5%;
+    flex-shrink: 0;
     display: flex;
 }
 
+.bottom_play_bar_spotify_options_list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
 
+.bottom_play_bar_spotify_options_list_item {
+    padding: 8px;
+}
+
+.bottom_play_bar_spotify_options_list_item_icon {
+    color: #878787;
+}
+
+.bottom_play_bar_spotify_options_list_item_volume_bar {
+    max-width: 100px;
+    min-width: 70px;
+    padding: 8px 0;
+}
+
+.bottom_play_bar_spotify_options_list_item_volume_bar_growth {
+    height: 3px;
+    width: 100%;
+    background-color: #5A5A5A;
+    border-radius: 6px;
+    position: relative;
+}
+
+.bottom_play_bar_spotify_options_list_item_volume_bar_growth_now {
+    width: 25%;
+    height: 100%;
+    background-color: #C1C1C1;
+}
+
+.bottom_play_bar_spotify_options_list_item_volume_bar:hover .bottom_play_bar_spotify_options_list_item_volume_bar_growth_now {
+    background-color: #ADFF2F;
+}
+
+.bottom_play_bar_spotify_options_list_item_volume_bar_growth_circle {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.bottom_play_bar_spotify_options_list_item_volume_bar:hover .bottom_play_bar_spotify_options_list_item_volume_bar_growth_circle {
+    display: block;
+}
 
 /* Fine bottom play bar classes */
 
