@@ -258,6 +258,7 @@
 .all_music_container {
     flex-grow: 1;
     background-color: #141922;
+    overflow: auto;
 }
 
 .all_music_upgrade_container {
@@ -353,7 +354,7 @@
 
 .exposition_card_title {
     color: white;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 15px;
     text-align: center;
 }
@@ -366,7 +367,7 @@
 }
 
 .all_music_created_for_you_container {
-
+    padding: 14px 12px 10px;
 }
 
 .all_music_created_for_you_main_title {
@@ -382,15 +383,19 @@
 }
 
 .all_music_artists_container {
-
+    padding: 14px 12px 10px;
 }
 
 .all_music_artists_main_title {
-
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
 }
 
-.all_music_artist_subtitle {
-
+.all_music_artists_subtitle {
+    color: #878787;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 .artists_card_image_container {
