@@ -26,6 +26,7 @@
 
 .upper_container_box {
     /* border: 1px solid cornflowerblue; usata per visualizzare se funziona */
+    height: calc(100vh - 80px);
 }
 
 /* Inizio side bar classes */
@@ -42,7 +43,7 @@
 .side_bar_menu_container {
     /* border: 1px solid greenyellow; usata per visualizzare se funziona */
     flex-shrink: 0;
-
+    height: 210px;
     /* height: 10px; usata per visualizzare se funziona */
 }
 
@@ -143,10 +144,12 @@
     padding-left: 8px;
     padding-top: 16px;
     padding-bottom: 6px;
+    height: calc(100% - 210px - 120px);
+    overflow-y: hidden;
 }
 
 .side_bar_playlists_creation {
-
+    height: 66px;
 }
 
 .side_bar_playlists_creation_title {
@@ -177,13 +180,13 @@
 }
 
 .side_bar_playlists {
-    overflow: auto;
+    height: calc(100% - 66px);
+    overflow-y: auto;
 }
 
 .side_bar_playlists_list {
     list-style: none;
     padding: 7px 0 5px;
-    overflow-y: auto;
     max-height: 200px;
 }
 
@@ -200,6 +203,7 @@
     /* border: 1px solid greenyellow; usata per visualizzare se funziona */
     flex-shrink: 0;
     padding: 0 8px;
+    height: 120px;
     /* height: 10px; usata per visualizzare se funziona */
 }
 
@@ -258,7 +262,7 @@
 .all_music_container {
     flex-grow: 1;
     background-color: #141922;
-    overflow: auto;
+    overflow-y: hidden;
 }
 
 .all_music_upgrade_container {
@@ -268,6 +272,7 @@
     padding-right: 10px;
     text-align: right;
     text-transform: uppercase;
+    height: 83px;
 }
 
 .all_music_upgrade_button {
@@ -278,6 +283,11 @@
     text-decoration: none;
     font-size: 12px;
     font-weight: 600;
+}
+
+.all_music_page_container {
+    height: calc(100% - 83px);
+    overflow-y: auto;
 }
 
 .all_music_page_links_container {
@@ -315,8 +325,7 @@
 }
 
 .all_music_albums_container {
-    height: 100%;
-    /* overflow-y: auto; */
+    
 }
 
 .all_music_recently_played_container {
