@@ -325,7 +325,7 @@
 }
 
 .all_music_albums_container {
-    
+
 }
 
 .all_music_recently_played_container {
@@ -342,17 +342,21 @@
     width: 100%;
     padding: 20px 0;
     display: flex;
-    gap: 20px;
+    row-gap: 40px;
+    column-gap: 20px;
+    flex-wrap: wrap;
 }
 
 .exposition_card {
-    width: calc(100% / 6 - 20px);
-    min-width: 100px;
+    width: calc(100% / 2 - 10px);
     flex-shrink: 1;
+    text-align: center;
 }
 
 .exposition_card_image_container {
     width: 100%;
+    max-width: 150px;
+    display: inline-block;
 }
 
 .exposition_card_image {
@@ -688,27 +692,9 @@
 
 /* Fine bottom play bar classes */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Queries */
 
-@media screen and /* (min-width: 480px) and  */(max-width: 619px) {
+@media screen and /* (min-width: 480px) and  */(max-width: 600px) {
     .side_bar_menu_logo {
         width: 100%;
     }
@@ -776,26 +762,14 @@
     }
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 991px) {
-    .class {
-        attribute: ;
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .exposition_card {
+        width: calc(100% / 4 - 15px);
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    .class {
-        attribute: ;
+@media screen and (min-width: 768px) {
+    .exposition_card {
+        width: calc(100% / 6 - 16.7px);
     }
 }
-
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-    .class {
-        attribute: ;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .class {
-        attribute: ;
-    }
-} */
