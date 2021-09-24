@@ -507,6 +507,8 @@
     padding: 4px 14px;
     position: relative;
     z-index: 99;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .bottom_play_bar_box {
