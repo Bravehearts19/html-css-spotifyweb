@@ -10,6 +10,19 @@
     display: table;
     clear: both;
 }
+
+.hover_underline {
+    text-decoration: none;
+    color: #878787;
+}
+
+.hover_underline:hover {
+    text-decoration: underline;
+}
+
+.hover_change_color_white:hover {
+    color: white;
+}
   
 .total_container {
     height: 100vh;
@@ -190,13 +203,21 @@
     max-height: 200px;
 }
 
-.side_bar_playlist_list_item {
-    
+.side_bar_playlists_list_item {
+    padding: 0 0 12px;
+}
+
+.side_bar_playlists_last_list_item {
+    padding: 0;
 }
 
 .side_bar_playlists_list_item_title {
     color: #878787;
-    padding: 7px 0;
+    padding: 5px;
+    margin-left: -5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .side_bar_user_options_container {
@@ -285,6 +306,12 @@
     font-weight: 600;
 }
 
+.all_music_upgrade_button:hover {
+    font-size: 12.5px;
+    padding: 9px 20px;
+    border-radius: 21px;
+}
+
 .all_music_page_container {
     height: calc(100% - 83px);
     overflow-y: auto;
@@ -357,6 +384,39 @@
     width: 100%;
     max-width: 150px;
     display: inline-block;
+    position: relative;
+}
+
+.exposition_card_hover_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+    padding: 12px;
+    display: none;
+}
+
+.exposition_card_hover_icon {
+    
+}
+
+.exposition_card_image_container:hover::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 4px;
+    right: 0;
+}
+
+.exposition_card_image_container:hover .exposition_card_hover_play {
+    display: inline-block;
+    z-index: 3;
 }
 
 .exposition_card_image {
@@ -415,6 +475,18 @@
     border-radius: 50%;
 }
 
+.artists_card_image_container:hover::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 4px;
+    right: 0;
+}
+
 .artists_card_image {
     border-radius: 50%;
 }
@@ -433,6 +505,8 @@
     height: 80px;
     width: 100%;
     padding: 4px 14px;
+    position: relative;
+    z-index: 99;
 }
 
 .bottom_play_bar_box {
@@ -476,8 +550,8 @@
 }
 
 .bottom_play_bar_song_informations_cover_text_artist {
-    color: #878787;
     font-size: 10px;
+    text-decoration: none;
 }
 
 .bottom_play_bar_song_informations_favorites {
@@ -490,11 +564,12 @@
     padding: 3px;
     text-decoration: none;
     flex-shrink: 0;
+    color: #878787;
+    font-size: 16px;
 }
 
 .bottom_play_bar_song_informations_favorites_button_icon {
-    color: #878787;
-    font-size: 16px;
+
 }
 
 .bottom_play_bar_song_options {
@@ -523,20 +598,26 @@
     text-decoration: none;
     color: white;
     padding: 3px;
-}
-
-.bottom_play_bar_song_options_player_list_item_button_icon {
     font-size: 16px;
 }
 
-.bottom_play_bar_song_options_player_list_item_main_button  {
+.bottom_play_bar_song_options_player_list_item_button_icon {
+
+}
+
+.bottom_play_bar_song_options_player_list_item_main_button {
     text-decoration: none;
     color: white;
     padding: 4px 6px;
+    font-size: 24px;
+}
+
+.bottom_play_bar_song_options_player_list_item_main_button:hover {
+    font-size: 26px;
 }
 
 .bottom_play_bar_song_options_player_list_item_main_button_icon {
-    font-size: 26px;
+
 }
 
 /* Inizio Song options time */
@@ -642,11 +723,12 @@
 .bottom_play_bar_spotify_options_list_item_button {
     padding: 3px;
     text-decoration: none;
+    color: #878787;
+    font-size: 16px;
 }
 
 .bottom_play_bar_spotify_options_list_item_button_icon {
-    color: #878787;
-    font-size: 16px;
+
 }
 
 .bottom_play_bar_spotify_options_list_item_volume_bar {
